@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+/* Enhanced gaming-style scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1F2937;
+  border-radius: 6px;
+  border: 1px solid #374151;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #FBBF24, #F59E0B);
+  border-radius: 6px;
+  border: 2px solid #374151;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #F59E0B, #D97706);
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.4);
+}
+
+/* Enhanced text rendering */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Gaming-inspired animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(2deg); }
+}
+
+@keyframes glow {
+  0%, 100% { 
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.3), 0 0 40px rgba(251, 191, 36, 0.1); 
+  }
+  50% { 
+    box-shadow: 0 0 30px rgba(251, 191, 36, 0.5), 0 0 60px rgba(251, 191, 36, 0.2); 
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.4);
+  }
+  50% { 
+    box-shadow: 0 0 0 20px rgba(251, 191, 36, 0);
+  }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes scan-line {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+@keyframes pixel-fade {
+  0%, 100% { opacity: 0.1; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes console-pulse {
+  0%, 100% { 
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.7);
+  }
+  50% { 
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(251, 191, 36, 0);
+  }
+}
+
+/* Gaming HUD-inspired animations */
+@keyframes hud-flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes hologram-glitch {
+  0%, 100% { 
+    transform: translateX(0);
+    filter: hue-rotate(0deg);
+  }
+  20% { 
+    transform: translateX(-2px);
+    filter: hue-rotate(90deg);
+  }
+  40% { 
+    transform: translateX(2px);
+    filter: hue-rotate(180deg);
+  }
+  60% { 
+    transform: translateX(-1px);
+    filter: hue-rotate(270deg);
+  }
+  80% { 
+    transform: translateX(1px);
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes grid-pulse {
+  0%, 100% { opacity: 0.1; }
+  50% { opacity: 0.3; }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+.animate-scan-line {
+  animation: scan-line 3s linear infinite;
+}
+
+.animate-pixel-fade {
+  animation: pixel-fade 2s ease-in-out infinite;
+}
+
+.animate-console-pulse {
+  animation: console-pulse 2s ease-in-out infinite;
+}
+
+.animate-hud-flicker {
+  animation: hud-flicker 3s ease-in-out infinite;
+}
+
+.animate-hologram-glitch {
+  animation: hologram-glitch 4s ease-in-out infinite;
+}
+
+.animate-grid-pulse {
+  animation: grid-pulse 2s ease-in-out infinite;
+}
+
+/* Hide scrollbar while maintaining scroll functionality */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Enhanced gradient text with gaming feel */
+.gradient-text {
+  background: linear-gradient(135deg, #FBBF24, #EAB308, #FBBF24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% 200%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+/* Enhanced hover effects with gaming aesthetics */
+.hover-lift {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15), 0 0 30px rgba(251, 191, 36, 0.1);
+}
+
+/* Gaming-inspired button effects */
+.btn-gaming {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-gaming::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-gaming:hover::before {
+  left: 100%;
+}
+
+.btn-gaming::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.btn-gaming:hover::after {
+  opacity: 1;
+}
+
+/* Gaming UI elements */
+.gaming-border {
+  position: relative;
+}
+
+.gaming-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #FBBF24, transparent, #FBBF24);
+  padding: 2px;
+  border-radius: inherit;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+}
+
+/* HUD-style corner brackets */
+.hud-corners {
+  position: relative;
+}
+
+.hud-corners::before,
+.hud-corners::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #FBBF24;
+}
+
+.hud-corners::before {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.hud-corners::after {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
+
+/* Holographic grid effect */
+.holographic-grid {
+  background-image: 
+    linear-gradient(rgba(251, 191, 36, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(251, 191, 36, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+  animation: grid-pulse 3s ease-in-out infinite;
+}
+
+/* Circuit board pattern */
+.circuit-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(251, 191, 36, 0.1) 2px, transparent 2px),
+    radial-gradient(circle at 75% 75%, rgba(251, 191, 36, 0.1) 2px, transparent 2px),
+    linear-gradient(45deg, transparent 40%, rgba(251, 191, 36, 0.05) 50%, transparent 60%);
+  background-size: 40px 40px, 40px 40px, 80px 80px;
+}
+
+/* Scanline effect */
+.scanlines {
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(251, 191, 36, 0.03) 2px,
+    rgba(251, 191, 36, 0.03) 4px
+  );
+  animation: scan-line 4s linear infinite;
+}
+
+/* Neon edge glow */
+.neon-edge {
+  box-shadow: 
+    inset 0 0 20px rgba(251, 191, 36, 0.1),
+    0 0 20px rgba(251, 191, 36, 0.1);
+}
+
+/* Pixel dithering effect */
+.pixel-dither {
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(251, 191, 36, 0.15) 1px, transparent 0);
+  background-size: 4px 4px;
+  animation: pixel-fade 2s ease-in-out infinite;
+}
+
+/* Directional lighting gradient */
+.directional-light {
+  background: radial-gradient(
+    ellipse 800px 400px at 50% 0%,
+    rgba(251, 191, 36, 0.1) 0%,
+    transparent 50%
+  );
+}
+
+/* Enhanced focus states for accessibility */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #FBBF24;
+  outline-offset: 2px;
+  border-radius: 8px;
+  box-shadow: 0 0 0 4px rgba(251, 191, 36, 0.2);
+}
+
+/* Smooth section transitions */
+section {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Enhanced mobile touch targets */
+@media (max-width: 768px) {
+  button, a {
+    min-height: 48px;
+  }
+  
+  /* Ensure form inputs are properly sized on mobile */
+  input, textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  /* Better mobile spacing */
+  .prose h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .prose h3 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .prose p {
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  
+  .prose ul {
+    margin-bottom: 1rem;
+    padding-left: 1.25rem;
+  }
+  
+  .prose li {
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+}
+
+/* Blog article prose styling */
+.prose {
+  color: #374151;
+  max-width: none;
+}
+
+.prose h2 {
+  color: #111827;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose h3 {
+  color: #111827;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose p {
+  margin-bottom: 1.25rem;
+  line-height: 1.75;
+}
+
+.prose ul {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+  line-height: 1.75;
+}
+
+.prose strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Performance optimizations */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+/* Gaming-specific utility classes */
+.pixel-perfect {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.retro-shadow {
+  text-shadow: 2px 2px 0px #000, 4px 4px 0px rgba(251, 191, 36, 0.3);
+}
+
+.neon-glow {
+  box-shadow: 
+    0 0 5px #FBBF24,
+    0 0 10px #FBBF24,
+    0 0 15px #FBBF24,
+    0 0 20px #FBBF24;
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .bg-gray-900 {
+    background-color: #000000;
+  }
+  
+  .text-gray-300 {
+    color: #ffffff;
+  }
+  
+  .border-gray-800 {
+    border-color: #ffffff;
+  }
+}
