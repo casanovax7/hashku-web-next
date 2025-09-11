@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, ArrowLeft, HelpCircle } from 'lucide-react';
+import Breadcrumbs from './Breadcrumbs';
 
 const FAQ = () => {
   const [openItems, setOpenItems] = useState<number[]>([]);
@@ -123,6 +124,12 @@ const FAQ = () => {
           </div>
           
           <div className="text-center">
+            <Breadcrumbs 
+              items={[
+                { label: 'FAQ', href: '/faq', current: true }
+              ]}
+            />
+            
             <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gray-900/80 backdrop-blur-md border border-yellow-400/40 rounded-full text-yellow-400 text-xs sm:text-sm font-medium mb-6 sm:mb-8">
               <HelpCircle className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" />
               Frequently Asked Questions

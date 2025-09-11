@@ -342,6 +342,125 @@ export const blogPosts: BlogPost[] = [
 
       <p>Ready to tap into the massive mobile gaming audience? Our team can help you develop mobile gaming advertising strategies that drive engagement and deliver measurable business results.</p>
     `
+  },
+  {
+    id: '6',
+    title: "Gaming Marketing Budget Allocation: How Much Should You Spend on Gaming Ads?",
+    slug: "gaming-marketing-budget-allocation-how-much-should-you-spend-on-gaming-ads",
+    excerpt: "Strategic guide to gaming marketing budget planning, cost benchmarks, and ROI expectations across different gaming advertising channels.",
+    author: "Hashku Team",
+    date: "2025-01-30",
+    readTime: "8 min read",
+    category: "Strategy",
+    image: "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    tags: ["Gaming Budget", "Marketing Spend", "ROI Planning"],
+    featured: true,
+    seo: {
+      metaTitle: "Gaming Marketing Budget Guide: How Much to Spend on Gaming Ads | Hashku",
+      metaDescription: "Strategic guide to gaming marketing budget planning, cost benchmarks, and ROI expectations across gaming advertising channels.",
+      keywords: ["gaming marketing budget", "gaming advertising costs", "gaming marketing spend", "gaming ROI planning"]
+    },
+    content: `
+      <p>Determining the right budget for gaming marketing requires understanding channel costs, audience value, and expected returns. This guide provides frameworks for strategic budget allocation.</p>
+
+      <h2>Gaming Marketing Budget Benchmarks</h2>
+      <p>Gaming marketing costs vary significantly by channel, audience targeting, and campaign objectives. Understanding industry benchmarks helps set realistic budget expectations.</p>
+
+      <h3>Channel-Specific Cost Ranges</h3>
+      <ul>
+        <li><strong>In-Game Advertising:</strong> $5-25 CPM depending on game popularity and placement</li>
+        <li><strong>Gaming Creator Partnerships:</strong> $1,000-50,000+ per creator based on audience size</li>
+        <li><strong>Mobile Gaming Ads:</strong> $0.50-5.00 CPC for gaming app advertising</li>
+        <li><strong>Esports Sponsorships:</strong> $10,000-500,000+ for tournament and team partnerships</li>
+      </ul>
+
+      <h2>Budget Allocation Framework</h2>
+      <p>Effective gaming marketing budgets balance reach, engagement, and conversion objectives across multiple channels and touchpoints.</p>
+
+      <h3>Recommended Budget Distribution</h3>
+      <ul>
+        <li><strong>40% - Paid Gaming Media:</strong> In-game ads, mobile gaming, platform advertising</li>
+        <li><strong>30% - Creator Partnerships:</strong> Gaming influencer collaborations and content</li>
+        <li><strong>20% - Experiential:</strong> Virtual events, gaming activations, community building</li>
+        <li><strong>10% - Testing & Innovation:</strong> New platforms, emerging gaming trends</li>
+      </ul>
+
+      <h2>ROI Expectations by Channel</h2>
+      <p>Different gaming marketing channels deliver varying ROI timelines and measurement approaches. Set appropriate expectations for each investment.</p>
+
+      <p>Ready to optimize your gaming marketing budget allocation? Our team can help you develop data-driven budget strategies that maximize ROI across gaming channels.</p>
+    `
+  },
+  {
+    id: '7',
+    title: "Roblox Marketing for Brands: Complete Guide to Virtual World Advertising",
+    slug: "roblox-marketing-for-brands-complete-guide-to-virtual-world-advertising",
+    excerpt: "Everything brands need to know about marketing on Roblox, from virtual experiences to branded items and community engagement strategies.",
+    author: "Hashku Team",
+    date: "2025-02-05",
+    readTime: "10 min read",
+    category: "Platform Guide",
+    image: "https://images.pexels.com/photos/4219654/pexels-photo-4219654.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    tags: ["Roblox Marketing", "Virtual Worlds", "Gaming Platforms"],
+    featured: false,
+    seo: {
+      metaTitle: "Roblox Marketing Guide: Brand Advertising in Virtual Worlds | Hashku",
+      metaDescription: "Complete guide to Roblox marketing for brands. Learn virtual world advertising, branded experiences, and community engagement strategies.",
+      keywords: ["Roblox marketing", "virtual world advertising", "Roblox brand partnerships", "gaming platform marketing"]
+    },
+    content: `
+      <p>Roblox has evolved into a massive platform with over 200 million monthly active users, creating unprecedented opportunities for brand engagement in virtual worlds.</p>
+
+      <h2>Understanding the Roblox Ecosystem</h2>
+      <p>Roblox is more than a game—it's a platform where users create, share, and monetize their own gaming experiences. This unique structure creates diverse marketing opportunities.</p>
+
+      <h3>Roblox Marketing Opportunities</h3>
+      <ul>
+        <li><strong>Branded Virtual Experiences:</strong> Custom games and worlds featuring your brand</li>
+        <li><strong>Virtual Items and Clothing:</strong> Branded accessories and avatar customizations</li>
+        <li><strong>Sponsored Events:</strong> Virtual concerts, product launches, and community gatherings</li>
+        <li><strong>Developer Partnerships:</strong> Collaborations with popular Roblox creators</li>
+      </ul>
+
+      <h2>Creating Successful Roblox Campaigns</h2>
+      <p>Successful Roblox marketing requires understanding the platform's unique culture and user expectations. Authenticity and value creation are essential.</p>
+
+      <p>Ready to explore Roblox marketing opportunities? Our team specializes in creating authentic virtual world experiences that drive engagement and brand affinity.</p>
+    `
+  },
+  {
+    id: '8',
+    title: "Gaming Marketing Trends 2025: What Brands Need to Know",
+    slug: "gaming-marketing-trends-2025-what-brands-need-to-know",
+    excerpt: "Explore the latest gaming marketing trends, emerging platforms, and strategic opportunities that will shape brand engagement in 2025.",
+    author: "Hashku Team",
+    date: "2025-02-10",
+    readTime: "9 min read",
+    category: "Trends",
+    image: "https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    tags: ["Gaming Trends", "2025 Marketing", "Future of Gaming"],
+    featured: true,
+    seo: {
+      metaTitle: "Gaming Marketing Trends 2025: Future of Brand Engagement | Hashku",
+      metaDescription: "Explore 2025 gaming marketing trends, emerging platforms, and strategic opportunities for brand engagement in gaming.",
+      keywords: ["gaming marketing trends 2025", "future of gaming marketing", "gaming advertising trends", "emerging gaming platforms"]
+    },
+    content: `
+      <p>The gaming marketing landscape continues to evolve rapidly. Understanding emerging trends helps brands stay ahead and capitalize on new opportunities.</p>
+
+      <h2>Key Gaming Marketing Trends for 2025</h2>
+      <p>Several major trends are reshaping how brands approach gaming marketing, from new technologies to changing consumer behaviors.</p>
+
+      <h3>Emerging Opportunities</h3>
+      <ul>
+        <li><strong>AI-Powered Personalization:</strong> Dynamic ad content based on gaming behavior</li>
+        <li><strong>Cross-Platform Integration:</strong> Seamless experiences across gaming ecosystems</li>
+        <li><strong>Social Commerce in Gaming:</strong> Direct purchasing within gaming environments</li>
+        <li><strong>Sustainability Messaging:</strong> Environmental consciousness in gaming marketing</li>
+      </ul>
+
+      <p>Stay ahead of gaming marketing trends with strategic insights and early adoption of emerging opportunities.</p>
+    `
   }
 ];
 

@@ -39,7 +39,7 @@ const Hero = () => {
           </div>
 
           {/* Enhanced Main Headline */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-8 sm:mb-10 leading-[0.9] tracking-tight relative">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-8 sm:mb-10 leading-[0.9] tracking-tight relative" itemProp="headline">
             <span className="relative">
               Turn Gameplay Into
             </span>
@@ -49,8 +49,8 @@ const Hero = () => {
           </h1>
 
           {/* Enhanced Subheadline */}
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300 max-w-5xl mx-auto mb-12 sm:mb-16 leading-relaxed font-light">
-            Where gaming, culture, and commerce collide
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-300 max-w-5xl mx-auto mb-12 sm:mb-16 leading-relaxed font-light" itemProp="description">
+            Gaming x Commerce
           </p>
 
           {/* Enhanced Gaming-Style CTA Button */}

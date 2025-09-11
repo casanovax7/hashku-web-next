@@ -1,0 +1,37 @@
+User-agent: *
+Allow: /
+
+# Block access to admin areas (if any in future)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /.env
+Disallow: /package.json
+
+# Allow specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Sitemap location
+Sitemap: https://hashku.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Cache directive for static assets
+User-agent: *
+Allow: /public/
+Allow: /assets/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp

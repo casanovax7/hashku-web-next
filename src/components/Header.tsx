@@ -34,7 +34,7 @@ const Header = () => {
   };
 
   const handleNavClick = (item: string, e: React.MouseEvent) => {
-    const sectionId = item === 'Insights' ? 'intelligence' : item.toLowerCase().replace(' ', '-');
+    const sectionId = item === 'Process' ? 'intelligence' : item.toLowerCase().replace(' ', '-');
     
     if (isSpecialPage) {
       // If we're on a special page, navigate to home with hash
@@ -66,28 +66,30 @@ const Header = () => {
             role="button"
             tabIndex={0}
             onKeyDown={(e) => e.key === 'Enter' && (window.location.href = '/')}
+            aria-label="Hashku - Gaming Marketing Platform Home"
           >
             <img 
               src="/Icon_Hashku copy.png" 
-              alt="Hashku gaming marketing platform logo icon" 
+              alt="Hashku gaming marketing platform logo - Connect brands with 3 billion gamers through in-game advertising and gaming media" 
               className="w-10 h-10 group-hover:scale-105 transition-all duration-300"
             />
             <img 
               src="/Logo_Hashku_White.png" 
-              alt="Hashku gaming marketing platform logo" 
+              alt="Hashku - Gaming advertising and marketing platform for brands" 
               className="h-8 group-hover:opacity-80 transition-all duration-300"
             />
           </div>
 
           {/* Enhanced Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-10">
-            {['Services', 'Insights', 'Case Studies', 'Resources', 'Contact'].map((item) => {
-              const sectionId = item === 'Insights' ? 'intelligence' : item.toLowerCase().replace(' ', '-');
+            {['Services', 'Process', 'Case Studies', 'Resources', 'Contact'].map((item) => {
+              const sectionId = item === 'Process' ? 'intelligence' : item.toLowerCase().replace(' ', '-');
               return (
               <a 
                 key={item}
                 href={`#${sectionId}`}
                 onClick={(e) => handleNavClick(item, e)}
+                aria-label={`Navigate to ${item} section`}
                 className="text-gray-300 hover:text-yellow-400 transition-all duration-300 font-medium relative group py-2"
               >
                 {item}
@@ -122,8 +124,8 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-4 pt-4 pb-6 space-y-3 bg-gray-900/95 backdrop-blur-md rounded-2xl mt-4 border border-gray-800 shadow-2xl">
-              {['Services', 'Insights', 'Case Studies', 'Resources', 'Contact'].map((item) => {
-                const sectionId = item === 'Insights' ? 'intelligence' : item.toLowerCase().replace(' ', '-');
+              {['Services', 'Process', 'Case Studies', 'Resources', 'Contact'].map((item) => {
+                const sectionId = item === 'Process' ? 'intelligence' : item.toLowerCase().replace(' ', '-');
                 return (
                 <a 
                   key={item}

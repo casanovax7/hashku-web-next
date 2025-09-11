@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Search, BookOpen, ArrowLeft } from "lucide-react";
+import Breadcrumbs from "./Breadcrumbs";
 
 const Glossary = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -136,6 +137,10 @@ const Glossary = () => {
           </div>
 
           <div className="text-center">
+            <Breadcrumbs
+              items={[{ label: "Glossary", href: "/glossary", current: true }]}
+            />
+
             <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gray-900/80 backdrop-blur-md border border-yellow-400/40 rounded-full text-yellow-400 text-xs sm:text-sm font-medium mb-6 sm:mb-8">
               <BookOpen className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" />
               Gaming Advertising Glossary

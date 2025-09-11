@@ -143,7 +143,7 @@ const Blog = () => {
               <div className="relative h-40 sm:h-48 overflow-hidden">
                 <img 
                   src={article.image} 
-                  alt={`Gaming marketing guide: ${article.title}`}
+                  alt={`Gaming marketing resource: ${article.title} - ${article.category} insights for gaming advertising success`}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
@@ -187,6 +187,7 @@ const Blog = () => {
                     e.preventDefault();
                     window.location.href = `/resources/${article.slug}`;
                   }}
+                  aria-label={`Read full article: ${article.title}`}
                   className="inline-flex items-center bg-yellow-400 hover:bg-yellow-500 text-black px-4 sm:px-6 py-2 sm:py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg shadow-yellow-400/25 hover:shadow-yellow-400/40 group/btn w-full justify-center text-sm sm:text-base"
                 >
                   Read Full Resource
@@ -211,7 +212,7 @@ const Blog = () => {
               <div className="relative h-40 sm:h-48 overflow-hidden">
                 <img 
                   src={article.image} 
-                  alt={`Gaming marketing guide: ${article.title}`}
+                  alt={`Gaming marketing resource: ${article.title} - ${article.category} insights for gaming advertising success`}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
@@ -255,6 +256,7 @@ const Blog = () => {
                     e.preventDefault();
                     window.location.href = `/resources/${article.slug}`;
                   }}
+                  aria-label={`Read full article: ${article.title}`}
                   className="inline-flex items-center bg-yellow-400 hover:bg-yellow-500 text-black px-4 sm:px-6 py-2 sm:py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg shadow-yellow-400/25 hover:shadow-yellow-400/40 group/btn w-full justify-center text-sm sm:text-base"
                 >
                   Read Full Resource

@@ -35,7 +35,7 @@ const Footer = () => {
             <h3 className="text-white font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Explore Hashku</h3>
             <ul className="space-y-2">
               <li><a href="#services" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm sm:text-base">Services</a></li>
-              <li><a href="#intelligence" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm sm:text-base">Insights</a></li>
+              <li><a href="#intelligence" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm sm:text-base">Process</a></li>
               <li><a href="#case-studies" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm sm:text-base">Case Studies</a></li>
               <li><a href="#contact" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm sm:text-base">Contact</a></li>
             </ul>

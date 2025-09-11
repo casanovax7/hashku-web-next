@@ -17,7 +17,7 @@ const Services = () => {
       icon: Monitor,
       title: "Media",
       subtitle: "Around the Game",
-      description: "Targeted advertising across gaming platforms (mobile, console, and PC) to reach gamers where they play.",
+      description: "Targeted advertising across mobile, console, and PC gaming to reach audiences where they play.",
       features: ["Gaming platform ads", "Mobile & desktop targeting", "Console advertising", "Streaming platform integration"],
       gradient: "from-yellow-400 to-yellow-600",
       iconBg: "bg-gradient-to-br from-yellow-400 to-yellow-600",
@@ -63,7 +63,7 @@ const Services = () => {
             </span>
           </h2>
           <p className="text-xl sm:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Our integrated approach ensures your brand shows up authentically across the entire gaming ecosystem.
+            Our integrated approach ensures your brand shows up authentically across the gaming ecosystem.
           </p>
         </div>
 

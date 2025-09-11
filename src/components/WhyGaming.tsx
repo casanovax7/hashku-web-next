@@ -7,19 +7,19 @@ const WhyGaming = () => {
       icon: Globe,
       stat: "3B+",
       label: "Global Gamers",
-      description: "Over 3 billion gamers worldwide, with 200M+ in the U.S. alone—representing the largest entertainment audience on the planet."
+      description: "Over 3 billion gamers worldwide, 200M+ in the U.S. - representing the largest entertainment audience on the planet."
     },
     {
       icon: Users,
       stat: "Gen Z + Millennials",
       label: "Prime Demographics",
-      description: "Gaming reaches highly valuable, hard-to-reach audiences who are increasingly ad-resistant and prioritize gaming over traditional media."
+      description: "Gaming reaches valuable, hard-to-reach audiences who prioritize gaming over traditional media."
     },
     {
       icon: ShoppingCart,
       stat: "Full-Funnel",
       label: "Commerce Engine",
-      description: "Gaming isn't just awareness—it's a complete commerce engine driving engagement, consideration, and measurable purchase intent."
+      description: "Gaming is a complete commerce engine driving awareness, engagement, consideration, and purchase intent."
     }
   ];
 
@@ -48,14 +48,13 @@ const WhyGaming = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Enhanced Section Header with HUD styling */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-8 leading-tight relative">
-            Gaming Is The
-            <span className="block text-transparent bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text">
-              Future of Brand Growth
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 sm:mb-8 leading-tight relative">
+            <span className="text-transparent bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text">
+              Why Gaming, Why Now
             </span>
           </h2>
-          <p className="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Connect with the next generation of consumers, drive excitement to your category, and turn attention into measurable outcomes
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
+            Connect with the next generation of consumers, drive excitement at retail, and turn attention into measurable outcomes
           </p>
         </div>
 

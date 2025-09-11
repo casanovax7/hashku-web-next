@@ -4,6 +4,8 @@ import { Calendar, Clock, ArrowLeft } from 'lucide-react';
 import { getBlogPostBySlug } from '../data/blogPosts';
 import { updatePageMeta, resetPageMeta } from '../utils/seo';
 import ReadingProgressIndicator from './ReadingProgressIndicator';
+import Breadcrumbs from './Breadcrumbs';
+import InternalLinks from './InternalLinks';
 
 interface BlogArticleProps {
   slug: string;
@@ -70,6 +72,14 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ slug }) => {
             </a>
           </div>
           
+          <Breadcrumbs 
+            items={[
+              { label: 'Resources', href: '/resources' },
+              { label: article.category, href: `/resources?category=${encodeURIComponent(article.category)}` },
+              { label: article.title, href: `/resources/${article.slug}`, current: true }
+            ]}
+          />
+          
           <div className="flex items-center space-x-4 mb-6">
             <span className="bg-yellow-400 text-black px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-bold">
               {article.category}
@@ -108,13 +118,6 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ slug }) => {
 
       {/* Article Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        {/* SEO Meta Tags */}
-        <div className="hidden">
-          <h1>{article.seo.metaTitle}</h1>
-          <meta name="description" content={article.seo.metaDescription} />
-          <meta name="keywords" content={article.seo.keywords.join(', ')} />
-        </div>
-        
         <div className="prose prose-base sm:prose-lg max-w-none">
           <div 
             className="text-gray-700 leading-relaxed"
@@ -130,6 +133,13 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ slug }) => {
             </span>
           ))}
         </div>
+
+        {/* Internal Links */}
+        <InternalLinks 
+          currentSlug={article.slug}
+          category={article.category}
+          tags={article.tags}
+        />
 
         {/* CTA Section */}
         <div className="bg-gradient-to-r from-gray-900 to-black border border-gray-800 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 mt-12 sm:mt-16 text-center relative overflow-hidden neon-edge">

@@ -9,7 +9,7 @@ const CaseStudies = () => {
     {
       client: "Uncrustables",
       title: "Return to School",
-      description: "Strategic media campaign targeting students and parents during back-to-school season, positioning Uncrustables as the perfect gaming fuel for study sessions.",
+      description: "Back-to-school gaming advertising that meets busy parents where they play - shoppable, family-safe experiences that move Uncrustables from play to lunchbox and into carts.",
       image: "https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "Media",
       logo: "https://images.pexels.com/photos/3593922/pexels-photo-3593922.jpeg?auto=compress&cs=tinysrgb&w=200&h=100"
@@ -17,7 +17,7 @@ const CaseStudies = () => {
     {
       client: "Hershey's",
       title: "Halloween Campaign",
-      description: "Multi-channel Halloween campaign combining in-game integrations with creator content, driving massive engagement during peak candy season.",
+      description: "Family-friendly Roblox adventure that celebrates Halloween and guides fans from in-game fun to real-world candy runs.",
       image: "https://images.pexels.com/photos/7915288/pexels-photo-7915288.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "In-Game + Content",
       logo: "https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=200&h=100"
@@ -25,7 +25,7 @@ const CaseStudies = () => {
     {
       client: "Rewired Fest",
       title: "Music Gaming Festival",
-      description: "Immersive in-game festival experience connecting music and gaming communities through virtual concerts and interactive brand activations.",
+      description: "From festival floor to avatar - QR-to-quest flow that let Rewired attendees claim a limited Roblox wearable and turned event buzz into redemptions.",
       image: "https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "In-Game Integration",
       logo: "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=200&h=100"
@@ -33,7 +33,7 @@ const CaseStudies = () => {
     {
       client: "Hershey's",
       title: "S'mores Campaign",
-      description: "Summer content series featuring gaming creators making s'mores during gaming sessions, driving authentic product integration and seasonal sales.",
+      description: "Gamified S'mores nostalgia by turning fan memories into entries for a social challenge with custom giveaways.",
       image: "https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "Content",
       logo: "https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=200&h=100"
@@ -41,7 +41,7 @@ const CaseStudies = () => {
     {
       client: "Raybern's",
       title: "Product Launch",
-      description: "Gaming-focused content strategy for new product launch, leveraging gaming creators and community-driven storytelling to build brand awareness.",
+      description: "Creators launched Raybern's new breakfast product with moments that turned morning scrolls into trial and retail add-to-cart.",
       image: "https://images.pexels.com/photos/7915288/pexels-photo-7915288.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "Content",
       logo: "https://images.pexels.com/photos/3593922/pexels-photo-3593922.jpeg?auto=compress&cs=tinysrgb&w=200&h=100"
@@ -49,7 +49,7 @@ const CaseStudies = () => {
     {
       client: "Muckender",
       title: "Product Launch",
-      description: "Comprehensive media strategy for product launch targeting gaming audiences across mobile, PC, and console platforms with precision targeting.",
+      description: "Swipe-to-clean mini-game that let players erase stains across multiple surfaces - showcasing Muckender's power and driving traffic to the DTC store.",
       image: "https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "Media",
       logo: "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=200&h=100"
@@ -164,7 +164,7 @@ const CaseStudies = () => {
               <div className="relative h-48 sm:h-56 overflow-hidden">
                 <img 
                   src={study.image} 
-                  alt={`${study.client} gaming marketing campaign case study - ${study.title}`}
+                  alt={`${study.client} gaming marketing case study: ${study.title} - ${study.category} campaign showing how brands connect with gamers through ${study.category.toLowerCase()} strategies`}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
@@ -177,7 +177,7 @@ const CaseStudies = () => {
                   <div className="w-16 h-8 sm:w-20 sm:h-10 bg-white/95 backdrop-blur-md rounded-lg sm:rounded-xl flex items-center justify-center shadow-xl neon-edge">
                     <img 
                       src={study.logo} 
-                      alt={`${study.client} brand logo - gaming marketing client`}
+                      alt={`${study.client} logo - Gaming marketing client success story with Hashku platform`}
                       className="w-12 h-6 sm:w-16 sm:h-8 object-contain"
                     />
                   </div>
@@ -215,7 +215,7 @@ const CaseStudies = () => {
               <div className="relative h-48 sm:h-56 lg:h-72 overflow-hidden">
                 <img 
                   src={study.image} 
-                  alt={`${study.client} gaming marketing campaign case study - ${study.title}`}
+                  alt={`${study.client} gaming marketing case study: ${study.title} - ${study.category} campaign showing how brands connect with gamers through ${study.category.toLowerCase()} strategies`}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
@@ -228,7 +228,7 @@ const CaseStudies = () => {
                   <div className="w-16 h-8 sm:w-20 sm:h-10 bg-white/95 backdrop-blur-md rounded-lg sm:rounded-xl flex items-center justify-center shadow-xl neon-edge">
                     <img 
                       src={study.logo} 
-                      alt={`${study.client} brand logo - gaming marketing client`}
+                      alt={`${study.client} logo - Gaming marketing client success story with Hashku platform`}
                       className="w-12 h-6 sm:w-16 sm:h-8 object-contain"
                     />
                   </div>

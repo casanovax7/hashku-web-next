@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Calendar, Clock, ArrowRight, Search, Filter } from 'lucide-react';
 import { blogPosts, getAllCategories, getAllTags, type BlogPost } from '../data/blogPosts';
+import Breadcrumbs from './Breadcrumbs';
 
 const BlogList = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -31,6 +32,12 @@ const BlogList = () => {
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-28 pb-12 sm:pb-16">
           <div className="text-center">
+            <Breadcrumbs 
+              items={[
+                { label: 'Resources', href: '/resources', current: true }
+              ]}
+            />
+            
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
               Gaming Advertising
               <span className="block text-yellow-400">Resources</span>
@@ -156,6 +163,7 @@ const BlogList = () => {
                       e.preventDefault();
                       window.location.href = `/resources/${article.slug}`;
                     }}
+                    aria-label={`Read full article: ${article.title}`}
                     className="inline-flex items-center bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg shadow-yellow-400/25 hover:shadow-yellow-400/40 group/btn w-full justify-center"
                   >
                     Read Full Resource
