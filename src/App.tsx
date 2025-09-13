@@ -19,6 +19,15 @@ function App() {
     window.location.pathname === "/resources/";
   const isGlossaryPage = window.location.pathname === "/glossary";
   const isFAQPage = window.location.pathname === "/faq";
+  const isEventPage =
+    window.location.pathname === "/event" ||
+    window.location.pathname === "/event/";
+
+  // Redirect /event to home page
+  if (isEventPage) {
+    window.location.replace("/");
+    return null;
+  }
 
   if (isArticlePage || isBlogListPage) {
     return (
