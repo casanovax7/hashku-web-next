@@ -75,7 +75,7 @@ const Services = () => {
         <div className="text-center mb-24">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-8 leading-tight relative">
             Ways We Connect
-            <span className="block text-transparent bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text">
+            <span className="block text-transparent bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text h-20">
               Brands through Gaming
             </span>
           </h2>
