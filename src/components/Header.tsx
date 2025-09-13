@@ -139,28 +139,24 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-4 pt-4 pb-6 space-y-3 bg-gray-900/95 backdrop-blur-md rounded-2xl mt-4 border border-gray-800 shadow-2xl">
-              {[
-                "Services",
-                "Process",
-                "Case Studies",
-                "Resources",
-                "Contact",
-              ].map((item) => {
-                const sectionId =
-                  item === "Process"
-                    ? "intelligence"
-                    : item.toLowerCase().replace(" ", "-");
-                return (
-                  <a
-                    key={item}
-                    href={`#${sectionId}`}
-                    onClick={(e) => handleNavClick(item, e)}
-                    className="block px-4 py-3 text-gray-300 hover:text-yellow-400 hover:bg-gray-800/50 rounded-lg transition-all duration-300 font-medium"
-                  >
-                    {item}
-                  </a>
-                );
-              })}
+              {["Services", "Process", "Case Studies", "Contact"].map(
+                (item) => {
+                  const sectionId =
+                    item === "Process"
+                      ? "intelligence"
+                      : item.toLowerCase().replace(" ", "-");
+                  return (
+                    <a
+                      key={item}
+                      href={`#${sectionId}`}
+                      onClick={(e) => handleNavClick(item, e)}
+                      className="block px-4 py-3 text-gray-300 hover:text-yellow-400 hover:bg-gray-800/50 rounded-lg transition-all duration-300 font-medium"
+                    >
+                      {item}
+                    </a>
+                  );
+                }
+              )}
               <div className="pt-4 border-t border-gray-800">
                 <button
                   onClick={scrollToContact}
