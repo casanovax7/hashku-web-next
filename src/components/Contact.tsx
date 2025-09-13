@@ -293,7 +293,7 @@ const Contact = () => {
                 Start Your Gaming Strategy Session Today
               </h3>
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8 px-4 lg:px-0">
-                Whether you're looking to break into gaming marketing or scale
+                Whether you're looking to break into gaming advertising or scale
                 your existing efforts, we're here to help you navigate the
                 gaming ecosystem and achieve measurable results.
               </p>
@@ -324,19 +324,19 @@ const Contact = () => {
                 <div className="flex items-start space-x-3">
                   <div className="w-1.5 h-1.5 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-                    Gaming-native, commerce-driven.
+                    Gaming-native, commerce-driven
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-1.5 h-1.5 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-                    Full-funnel strategy.
+                    Full-funnel strategy
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-1.5 h-1.5 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
                   <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-                    Trusted to drive measurable growth.
+                    Trusted to drive measurable growth
                   </p>
                 </div>
               </div>
