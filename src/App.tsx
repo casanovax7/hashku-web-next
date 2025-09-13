@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { initGA, trackPageView } from "./utils/analytics";
 import BlogRouter from "./components/BlogRouter";
 import Glossary from "./components/Glossary";
 import FAQ from "./components/FAQ";
@@ -12,7 +13,15 @@ import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+// Initialize Google Analytics
+initGA();
+
 function App() {
+  // Track page view on component mount and path changes
+  useEffect(() => {
+    trackPageView(window.location.pathname);
+  }, []);
+
   const isArticlePage = window.location.pathname.startsWith("/resources/");
   const isBlogListPage =
     window.location.pathname === "/resources" ||
@@ -24,7 +33,7 @@ function App() {
     window.location.pathname === "/event/";
 
   // Redirect /event to home page
-  if (isEventPage) {
+  if (isEventPage || isBlogListPage || isArticlePage) {
     window.location.replace("/");
     return null;
   }

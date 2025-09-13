@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Mail, Send, CheckCircle, AlertCircle } from "lucide-react";
 import { submitContactForm } from "../lib/api";
+import { trackContactSubmission } from "../utils/analytics";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -36,6 +37,9 @@ const Contact = () => {
       if (error) {
         throw new Error(error.message);
       }
+
+      // Track successful form submission
+      trackContactSubmission();
 
       setSubmitStatus("success");
       setFormData({
