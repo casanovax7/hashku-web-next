@@ -76,7 +76,7 @@ const Services = () => {
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-8 leading-tight relative">
             Ways We Connect
             <span className="block text-transparent bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text h-20">
-              Brands through Gaming
+              Brands Through Gaming
             </span>
           </h2>
           <p className="text-xl sm:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
