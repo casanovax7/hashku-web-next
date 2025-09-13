@@ -8,6 +8,14 @@ import {
   ChevronRight,
 } from "lucide-react";
 
+// Import case study images
+import uncrustablesImage from "../assets/case-studies/uncrustables.png";
+import hersheysImage from "../assets/case-studies/hersheys.png";
+import rewiredImage from "../assets/case-studies/rewired.png";
+import smoresImage from "../assets/case-studies/smores.png";
+import raybernsImage from "../assets/case-studies/rayberns.png";
+import muckenderImage from "../assets/case-studies/muckender.png";
+
 const CaseStudies = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -17,8 +25,7 @@ const CaseStudies = () => {
       title: "Return to School",
       description:
         "We met busy parents in the games they love, weaving family-friendly, shoppable moments into play; so Uncrustables moved seamlessly from playtime to into carts.",
-      image:
-        "https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: uncrustablesImage,
       category: "Media",
       logo: "https://images.pexels.com/photos/3593922/pexels-photo-3593922.jpeg?auto=compress&cs=tinysrgb&w=200&h=100",
     },
@@ -26,9 +33,8 @@ const CaseStudies = () => {
       client: "Hershey's",
       title: "Halloween",
       description:
-        "We helped trick-or-treaters celebrate Halloween with Hershey’s in-game and in real life by connecting with them on social and Roblox through a limited drop and on-platform experience.",
-      image:
-        "https://images.pexels.com/photos/7915288/pexels-photo-7915288.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "We helped trick-or-treaters celebrate Halloween with Hershey's in-game and in real life by connecting with them on social and Roblox through a limited drop and on-platform experience.",
+      image: hersheysImage,
       category: "In-Game + Content",
       logo: "https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=200&h=100",
     },
@@ -37,8 +43,7 @@ const CaseStudies = () => {
       title: "Music Gaming Festival",
       description:
         "We turned festival buzz into avatar pride with a QR-to-quest flow that let Rewired attendees claim a limited-edition Roblox wearable, turning excitement into redemptions.",
-      image:
-        "https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: rewiredImage,
       category: "In-Game Integration",
       logo: "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=200&h=100",
     },
@@ -46,9 +51,8 @@ const CaseStudies = () => {
       client: "Hershey's",
       title: "S'mores",
       description:
-        "We gamified S’mores nostalgia, turning memories into social-challenge entries that unlocked custom giveaways and moved fans from feed to cart.",
-      image:
-        "https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "We gamified S'mores nostalgia, turning memories into social-challenge entries that unlocked custom giveaways and moved fans from feed to cart.",
+      image: smoresImage,
       category: "Content",
       logo: "https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=200&h=100",
     },
@@ -56,9 +60,8 @@ const CaseStudies = () => {
       client: "Raybern's",
       title: "Product Launch",
       description:
-        "We partnered with creators to launch Raybern’s new breakfast product, turning morning scrolls into trial and retail add-to-cart.",
-      image:
-        "https://images.pexels.com/photos/7915288/pexels-photo-7915288.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "We partnered with creators to launch Raybern's new breakfast product, turning morning scrolls into trial and retail add-to-cart.",
+      image: raybernsImage,
       category: "Content",
       logo: "https://images.pexels.com/photos/3593922/pexels-photo-3593922.jpeg?auto=compress&cs=tinysrgb&w=200&h=100",
     },
@@ -66,9 +69,8 @@ const CaseStudies = () => {
       client: "Muckender",
       title: "Product Launch",
       description:
-        "We built a swipe-to-clean mini-game that that demonstrated Muckender’s cleaning power across surfaces and drove players to a giveaway, capturing opt-in first party data through play.",
-      image:
-        "https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "We built a swipe-to-clean mini-game that that demonstrated Muckender's cleaning power across surfaces and drove players to a giveaway, capturing opt-in first party data through play.",
+      image: muckenderImage,
       category: "Media",
       logo: "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=200&h=100",
     },
