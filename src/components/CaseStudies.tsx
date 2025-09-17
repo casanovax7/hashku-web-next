@@ -24,7 +24,7 @@ const CaseStudies = () => {
       client: "Uncrustables",
       title: "Return to School",
       description:
-        "We met busy parents in the games they love, weaving family-friendly, shoppable moments into play; so Uncrustables moved seamlessly from playtime to into carts.",
+        "We met busy parents in the games they love, weaving family-friendly, shoppable moments into play; so Uncrustables moved seamlessly from playtime into carts.",
       image: uncrustablesImage,
       category: "Media",
       logo: "https://images.pexels.com/photos/3593922/pexels-photo-3593922.jpeg?auto=compress&cs=tinysrgb&w=200&h=100",
